@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## SOBRE ESTE PROYECTO
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Se creo una API REST FULL con laravel, generando dos Modesl Clients y Producs con los cuales se han generados endpoints para generar un CRUD trabajandolo desde la aplicacion POSTMAN, tambien se consumio una API para consultar la cotizacion actual del U$D para Argentina.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
