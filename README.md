@@ -2,7 +2,9 @@
 
 <p align="center">
 <a href="https://ibb.co/t36vW2d"><img src="https://i.ibb.co/yVCZbk3/api1.png" alt="api1" border="0"></a>
+    <hr><br>
 <a href="https://ibb.co/rG6vQ2n"><img src="https://i.ibb.co/Fbwnh4G/api2.png" alt="api2" border="0"></a>
+    <hr><br>
 <a href="https://ibb.co/gyYdzDK"><img src="https://i.ibb.co/kKZJQhC/postman-Capture.png" alt="postman-Capture" border="0"></a>
 </p>
 
