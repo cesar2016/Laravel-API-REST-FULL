@@ -19,12 +19,12 @@
 
 ## SOBRE ESTE PROYECTO "API REST FULL CON LARAVEL" 
 
-Se creo una API REST FULL con laravel, generando dos Modesl Clients y Producs con los cuales se han generados endpoints para generar un CRUD trabajandolo desde la aplicacion POSTMAN, tambien se consumio una API para consultar la cotizacion actual del U$D para Argentina.
+Se creo una API REST FULL con laravel, generando dos Modesl: "Clients y Producs" con los cuales se han generado endpoints para crear un CRUD trabajandolo desde la aplicacion POSTMAN, tambien se consumio una API esterna para consultar la cotizacion actual del U$D para Argentina.
 
 - Sistema de Logueo con jetStream.
-- Autenticacion y protenccion de rutas creaNdo un Token con SANCTUM
+- Autenticacion y protenccion de rutas creando un Token con SANCTUM
 - Frotend y estilos otorgados con bootstraps 4.
-- Ruteo de los endpoints en routes/api.php con rutas indivuales y agrupando el CRUD en una sola
+- Ruteo de los endpoints en routes/api.php con rutas indivuales y tambien agrupando el CRUD en una sola
 - Uso de servidor LARAGON y gestor de DB MySql MS.
 - Consultas a API del U$D externa https://api-dolar-argentina.herokuapp.com/api/dolaroficial con "guzzlehttp/guzzle": "^7.3".
  
