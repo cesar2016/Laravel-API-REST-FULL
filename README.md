@@ -1,8 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center"></p>
-<h1>-- AUTENTICATION TOKEN SANCTUM --</h1>
-<p></p>
+<p align="center"> 
+<h1>## AUTENTICATION TOKEN SANCTUM</h1>
+</p>
 
 <p align="center">
     <a href="https://ibb.co/t36vW2d"><img src="https://i.ibb.co/yVCZbk3/api1.png" alt="api1" border="0"></a>   
