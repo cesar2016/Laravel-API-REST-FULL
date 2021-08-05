@@ -23,9 +23,7 @@ Se creo una API REST FULL con laravel, generando dos Modesl Clients y Producs co
 - Ruteo de los endpoints en routes/api.php con rutas indivuales y agrupando el CRUD en una sola
 - Uso de servidor LARAGON y gestor de DB MySql MS.
 - Consultas a API del U$D externa https://api-dolar-argentina.herokuapp.com/api/dolaroficial con "guzzlehttp/guzzle": "^7.3".
--  ...
-- ...
-
+ 
  
 
 ## cesars.pro@gmail.com
