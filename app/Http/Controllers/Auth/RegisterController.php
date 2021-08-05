@@ -84,9 +84,9 @@ class RegisterController extends Controller
         $user = User::where('email', $request->email)->first();
 
         if (! $user || ! Hash::check($request->password, $user->password)) {
-             throw ValidationException::withMessages([
+             /* throw ValidationException::withMessages([
                 'msg' => ['Ups!, The credentials no found.'],
-            ]); 
+            ]); */ 
             return response()->json(['msg' =>["Ups!, The credentials no found."]]);
         }
 
