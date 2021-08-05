@@ -13,11 +13,12 @@
 </p>
 <hr>
 
-## SOBRE ESTE PROYECTO "API REST FULL CON LARAVEL"
+## SOBRE ESTE PROYECTO "API REST FULL CON LARAVEL" -- AUTENTICATION TOKEN SANCTUM --
 
 Se creo una API REST FULL con laravel, generando dos Modesl Clients y Producs con los cuales se han generados endpoints para generar un CRUD trabajandolo desde la aplicacion POSTMAN, tambien se consumio una API para consultar la cotizacion actual del U$D para Argentina.
 
 - Logueo con laravel/UI.
+- Autenticacion y protenccion de rutas creaNdo un Token con SANCTUM
 - Frotend y estilos otorgados con bootstraps 4.
 - Ruteo de los endpoints en routes/api.php con rutas indivuales y agrupando el CRUD en una sola
 - Uso de servidor LARAGON y gestor de DB MySql MS.
