@@ -23,6 +23,7 @@ Se creo una API REST FULL con laravel, generando dos Modesl: "Clients y Producs"
 
 - Sistema de Logueo con jetStream.
 - Autenticacion y protenccion de rutas creando un Token con SANCTUM
+- Remover Tokens existentes
 - Frotend y estilos otorgados con bootstraps 4.
 - Ruteo de los endpoints en routes/api.php con rutas indivuales y tambien agrupando el CRUD en una sola
 - Uso de servidor LARAGON y gestor de DB MySql MS.
