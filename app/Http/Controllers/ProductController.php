@@ -38,7 +38,7 @@ class ProductController extends Controller
         ]); 
 
         $Product = Product::create($request->all());
-        return response($Product);
+        return response($request);
     }
 
     /* public function Productfind($id)

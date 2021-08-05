@@ -1,5 +1,5 @@
-<?php
-
+<?php 
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request; 
@@ -16,16 +16,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user(); 
+    
 });
 
-// CLIENTS Rout API
-Route::get('clients', [ClientController::class, 'index']);
-Route::post('client/create', [ClientController::class, 'store']);
-Route::get('client/find/{id}', [ClientController::class, 'clientfind']);
-Route::put('client/update/{id}', [ClientController::class, 'update']);
-Route::delete('client/delete/{id}', [ClientController::class, 'destroy']);
+Route::group(['middleware' => 'auth:sanctum'], function () {
 
-// PRODUCTS Rout API
-Route::apiResource('product', ProductController::class);
+    // CLIENTS Rout API
+    Route::get('clients', [ClientController::class, 'index']);
+    Route::post('client/create', [ClientController::class, 'store']);
+    Route::get('client/find/{id}', [ClientController::class, 'clientfind']);
+    Route::put('client/update/{id}', [ClientController::class, 'update']);
+    Route::delete('client/delete/{id}', [ClientController::class, 'destroy']);
+ 
+    // PRODUCTS Rout API
+    Route::apiResource('product', ProductController::class); 
+   
+    // Delete token
+    Route::post('outToken', [ClientController::class, 'outToken']); 
+      
+
+}); 
+
+Route::post('acceso', [RegisterController::class, 'acceso']);
+
+ 
+
+

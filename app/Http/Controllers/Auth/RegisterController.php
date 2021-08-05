@@ -3,11 +3,19 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AccesoRequest;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+//use GuzzleHttp\Psr7\Request;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
+
+
+
+
 
 class RegisterController extends Controller
 {
@@ -69,5 +77,27 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        
     }
+
+    public function acceso(AccesoRequest $request){
+        $user = User::where('email', $request->email)->first();
+
+        if (! $user || ! Hash::check($request->password, $user->password)) {
+             throw ValidationException::withMessages([
+                'msg' => ['Ups!, The credentials no found.'],
+            ]); 
+            return response()->json(['msg' =>["Ups!, The credentials no found."]]);
+        }
+
+        $token = $user->createToken($request->email)->plainTextToken;
+
+        return response()->json([
+            'resposne'=> true,
+            'token_type'=> 'Bearer',
+            'token'=> $token
+        ]);
+    }
+
+    
 }

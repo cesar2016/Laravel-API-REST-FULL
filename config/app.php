@@ -133,6 +133,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+     
 
     'providers' => [
 
@@ -174,6 +175,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\FortifyServiceProvider::class,
+        App\Providers\JetstreamServiceProvider::class,
 
     ],
 

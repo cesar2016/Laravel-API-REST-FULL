@@ -24,9 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $USD = Http::get('https://api-dolar-argentina.herokuapp.com/api/dolaroficial')
-        ->json();         
-
-        return view('home', compact('USD'));
+       $USD = Http::get('https://api-dolar-argentina.herokuapp.com/api/dolaroficial')
+        ->json();    
+        return view('dashboard', compact('USD'));
+        
     }
 }

@@ -91,4 +91,14 @@ class ClientController extends Controller
         $client->delete();
         return 'Cliente '. $id. ' eliminado con exito!';
     }
+
+    public function outToken(Request $request){ 
+        
+        $request->user()->currentAccessToken()->delete();
+         
+         return response()->json([
+             'msg' => ['Token Removed.']             
+         ]); 
+ 
+     }
 }
