@@ -41,7 +41,7 @@ class ProductController extends Controller
         return response($request);
     }
 
-    /* public function Productfind($id)
+    public function productfind($id)
     {
         $Product = Product::find($id); 
 
@@ -49,11 +49,9 @@ class ProductController extends Controller
             return 'Ups!, Producte no encontrado';
         }else{
             return response($Product);
-        }
+        } 
         
-         
-        
-    } */
+    }
 
     /**
      * Display the specified resource.

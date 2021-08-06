@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
+namespace App\Http\Controllers; 
+ 
+use Illuminate\Support\Facades\Http; 
 
 class HomeController extends Controller
 {
@@ -14,7 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
+        $this->middleware('auth:sanctum');
     }
 
     /**
@@ -29,4 +29,5 @@ class HomeController extends Controller
         return view('dashboard', compact('USD'));
         
     }
+    
 }

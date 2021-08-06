@@ -1,6 +1,8 @@
-<?php 
+<?php
+
+use App\Http\Controllers\ApiguzzleController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ClientController; 
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\Route;
@@ -29,9 +31,10 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('client/find/{id}', [ClientController::class, 'clientfind']);
     Route::put('client/update/{id}', [ClientController::class, 'update']);
     Route::delete('client/delete/{id}', [ClientController::class, 'destroy']);
- 
+    
     // PRODUCTS Rout API
     Route::apiResource('product', ProductController::class); 
+    Route::get('product/find/{id}', [ProductController::class, 'productfind']); 
    
     // Delete token
     Route::post('outToken', [ClientController::class, 'outToken']); 
@@ -39,7 +42,11 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
 
 }); 
 
+Route::post('guzz', [ApiguzzleController::class, 'guzzEndpoints'])->name('guzz'); 
+Route::post('guzzSearch', [ApiguzzleController::class, 'guzzSearch'])->name('guzzSearch'); 
+
 Route::post('acceso', [RegisterController::class, 'acceso']);
+
 
  
 
