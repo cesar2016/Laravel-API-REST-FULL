@@ -33,4 +33,4 @@ Se creo una API REST FULL con laravel, generando dos Modesl: "Clients y Producs"
 
 ## cesars.pro@gmail.com
 ## Linkedin: https://www.linkedin.com/in/cesar-sanchez-dev/
-
+## Para ver y descargar mi CV: <a href="https://shorten.world/qxnxs"> Clic Aca ...</a>
